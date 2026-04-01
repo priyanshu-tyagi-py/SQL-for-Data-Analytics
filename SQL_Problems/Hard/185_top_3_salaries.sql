@@ -35,7 +35,7 @@ WHERE rnk <= 3;
 
 --------------------------------------------------
 
--- Insight:
+-- Insights:
 -- DENSE_RANK() ensures that employees with the same salary
 -- receive the same rank, preventing incorrect exclusions.
 
