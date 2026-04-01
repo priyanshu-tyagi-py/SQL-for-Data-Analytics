@@ -33,6 +33,6 @@ WHERE tiv2015_count > 1
 
 --------------------------------------------------
 
--- Insight:
+-- Insights:
 -- Window functions allow us to compute group-level information (counts)
 -- without collapsing rows, avoiding the need for multiple GROUP BY and JOIN operations.
