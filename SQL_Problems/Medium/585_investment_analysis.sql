@@ -3,8 +3,7 @@
 -- Difficulty: Medium
 
 -- Business Context:
--- An insurance company wants to calculate the total investment value (tiv_2016)
--- for policyholders who:
+-- An insurance company wants to calculate the total investment value (tiv_2016) for policyholders who:
 -- 1. Have the same tiv_2015 value as at least one other policyholder (duplicate values)
 -- 2. Are located in a unique location (no other policyholder shares the same lat, lon)
 
