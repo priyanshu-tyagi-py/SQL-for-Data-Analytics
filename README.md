@@ -1,4 +1,4 @@
-# SQL Interview Preparation
+# SQL Interview Preparation !!
 
 This repository contains a structured collection of SQL problems and solutions organized by topic. It is designed to support preparation for Data Analyst and related technical roles.
 
