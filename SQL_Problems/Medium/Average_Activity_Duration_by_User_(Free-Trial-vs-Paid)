@@ -1,10 +1,36 @@
--- Write your MySQL query statement below
+-- ============================================================
+-- MySQL -- Average Activity Duration by User (Free Trial vs Paid)
+-- ============================================================
+--
+-- Problem:
+--   For each user, compute the average duration of free_trial
+--   and paid activities separately.
+--   Return only users who have at least one paid activity.
+--
+-- Approach:
+--   1. Group rows by user_id.
+--   2. Use conditional aggregation (AVG + CASE WHEN) to pivot
+--      activity types into two separate columns in one pass.
+--   3. HAVING filters out users with no paid activity
+--      (their paid average would be NULL).
+--   4. ROUND to 2 decimal places for clean output.
+--
+-- Insights:
+--   - AVG ignores NULL values, so unmatched CASE branches are
+--     naturally excluded from each column's average.
+--   - HAVING paid_avg_duration IS NOT NULL is a concise way to
+--     check existence of paid rows without a subquery or JOIN.
+--   - This alias reference in HAVING is MySQL-specific; other
+--     dialects (PostgreSQL, SQL Server) require repeating the
+--     full expression.
+-- ============================================================
+
 SELECT user_id,
-    ROUND(AVG(CASE 
-        WHEN activity_type = 'free_trial' THEN activity_duration 
+    ROUND(AVG(CASE
+        WHEN activity_type = 'free_trial' THEN activity_duration
     END), 2) AS trial_avg_duration,
-    ROUND(AVG(CASE 
-        WHEN activity_type = 'paid' THEN activity_duration 
+    ROUND(AVG(CASE
+        WHEN activity_type = 'paid' THEN activity_duration
     END), 2) AS paid_avg_duration
 FROM UserActivity
 GROUP BY user_id
