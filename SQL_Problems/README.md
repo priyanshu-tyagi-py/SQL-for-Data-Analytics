@@ -55,4 +55,4 @@ Every `.sql` file is self-contained and follows a consistent structure:
 ## Author
 
 **Priyanshu Tyagi**  
-[GitHub](https://github.com/priyanshutyagi) · [LinkedIn](https://linkedin.com/in/priyanshutyagi)
+[GitHub](https://github.com/priyanshu-tyagi-py) · [LinkedIn](https://www.linkedin.com/in/priyanshu-tyagi8218/)
