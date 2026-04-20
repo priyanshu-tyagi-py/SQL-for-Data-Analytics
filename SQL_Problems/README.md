@@ -1,4 +1,4 @@
-# SQL — Business Problem Solving.
+# SQL — Business Problem Solving
 
 A collection of SQL queries written to solve real business problems — from tracking revenue trends and analyzing user behavior to ranking performance and segmenting data. Each query is documented with the business context it addresses, not just the technical solution.
 
