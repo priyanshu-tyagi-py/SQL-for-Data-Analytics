@@ -1,4 +1,4 @@
--- Problem: Customers Who Bought All Products
+-- Problem: Customers Who Bought All Products.
 -- Source: LeetCode
 -- Difficulty: Medium
 -- Business Context:
