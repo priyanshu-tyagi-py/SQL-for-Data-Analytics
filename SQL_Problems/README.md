@@ -42,7 +42,7 @@ Every `.sql` file is self-contained and follows a consistent structure:
 -- Output:    What each returned column represents.
 -- ============================================================
 ```
-
+sbdsgduhqwednajs ashbqswnqwnd asjqwdnqwmdqwkxlawsnxpawsx abssoxask;xma bqweudhiqwjas xsudhqwidja dhqwejd
 ---
 
 ## Tools & Environment
